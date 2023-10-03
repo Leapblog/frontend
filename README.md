@@ -1,113 +1,196 @@
-<h1 align="center">Leapfrog Product Launch</h1>
-
-<div align="center">
-  <img src="https://studentpartner.lftechnology.com/assets/images/student-partnership-logo.svg" alt="Leapfrog Student Partnership Logo" width="400">
-</div>
-
----
+<h1 align="center">
+  <img
+      src="https://readme-typing-svg.demolab.com?font=Roboto+Slab&color=9f4bff&size=30&center=true&vCenter=true&width=450&lines=Vite++React++TailwindCSS+Starter;"
+      alt="Vite + React + TailwindCSS Starter"
+  />
+</h1>
+  <br/>
 
 <div align="center">
   <img
     alt="GitHub repo size"
-    src="https://img.shields.io/github/repo-size/purnasth/leapfrog-product-launch?color=FFB001&logo=github&style=for-the-badge&logoColor=00CB5B"
+    src="https://img.shields.io/github/repo-size/purnasth/vite-react-tailwind-starter?color=9f4bff&logo=github&style=for-the-badge&logoColor=9f4bff"
   />
   <img
     alt="GitHub forks"
-    src="https://img.shields.io/github/forks/purnasth/leapfrog-product-launch?color=FFB001&logo=github&style=for-the-badge&logoColor=00CB5B"
+    src="https://img.shields.io/github/forks/purnasth/vite-react-tailwind-starter?color=9f4bff&logo=github&style=for-the-badge&logoColor=9f4bff"
   />
   <img
     alt="GitHub Repo stars"
-    src="https://img.shields.io/github/stars/purnasth/leapfrog-product-launch?color=FFB001&logo=github&style=for-the-badge&logoColor=00CB5B"
+    src="https://img.shields.io/github/stars/purnasth/vite-react-tailwind-starter?color=9f4bff&logo=github&style=for-the-badge&logoColor=9f4bff"
   />
   <img
     alt="Last commit"
-    src="https://img.shields.io/github/last-commit/purnasth/leapfrog-product-launch?color=FFB001&logo=git&logoColor=00CB5B&style=for-the-badge"
+    src="https://img.shields.io/github/last-commit/purnasth/vite-react-tailwind-starter?color=9f4bff&logo=git&logoColor&style=for-the-badge"
   />
   <img
     alt="Commit activity"
-    src="https://img.shields.io/github/commit-activity/m/purnasth/leapfrog-product-launch?color=FFB001&logo=git&logoColor=00CB5B&style=for-the-badge"
+    src="https://img.shields.io/github/commit-activity/m/purnasth/vite-react-tailwind-starter?color=9f4bff&logo=git&logoColor&style=for-the-badge"
   />
 </div>
+<br />
 
-## Overview
+<p align="center">This template provides a stater setup to get React working in Vite with TailwindCSS installed.</p>
 
-Welcome to the Leapfrog Product Launch project! In this repository, we are excited to introduce you to our team and provide an overview of the task assigned by Leapfrog. The task involves creating a phenomenal product launch for a project, and we are thrilled to be part of this exciting journey.
-
-## Team Members and Roles
-
-Here are the team members and their respective roles:
-
-1. **`Aditi Kharel`**
-2. **`Anupama Rai`**
-3. **`Astika Gurung`**
-4. **`Brihat Lamichhaney`**
-5. **`Kushal Dhakal`**
-6. **`Nishant Sapkota`**
-7. **`Purna Shrestha`**
-   - Web Development Lead, Presentation Assist, Design Assist, Final Product Launch Assist
-
-## Task Description
-
-Our task, assigned by Leapfrog, is to plan and execute a remarkable product launch for our project. Here's a brief overview of what this entails:
-
-- **Project Scope**: Our project manager, `Brihat Lamichhaney`, will work with everyone to define the scope of the project, including its objectives, target audience, and success criteria.
-
-- **Launch Strategy**: We will strategize how to create buzz and anticipation for the product launch, considering factors like timing, marketing channels, and promotional activities.
-
-- **Design and Branding**: Our designer lead, `Astika Gurung`, will create eye-catching visuals and branding elements to make the launch memorable.
-
-- **Web/App Development**: Our development team, led by `Purna Shrestha`, will create an exceptional product or feature, ensuring it meets quality and functionality standards. `Aditi Kharel`, `Anupama Rai`, and `Nishant Sapkota` will assist in frontend and backend development.
-
-- **Testing**: Our QA expert will rigorously test the product to identify and resolve any issues, ensuring a smooth user experience.
-
-- **Content Creation**: `Nishant Sapkota` will lead content creation with the assistance of everyone, including press releases, blog posts, and social media updates.
-
-- **User Feedback**: We will gather user feedback and iterate on the product based on their suggestions and needs.
-
-- **Launch Event**: `Kushal Dhakal` will lead the creation of presentation slides and organize a launch event to showcase the product to the world.
-
-- **Final Product Launch**: We, the LSPs, will launch the product and celebrate our success!
-
-## Tools Used
-
-Some of the tools used in this project include:
-
-- Figma for UI/UX design
-- react.js for frontend development
-- node.js for backend development
-- Tailwind CSS for styling
-- Git for version control
-- Cloudflare for web hosting and security
-- PowerPoint 365 for presentation
-
-## How to Contribute
-
-If you're part of the team to this project, please follow these steps:
-
-1. **Fork the Repository**: Fork this repository by clicking the "Fork" button at the top right of this page.
-
-2. **Clone the Repository**: Clone your forked repository to your local machine.
-
-3. **Branching**: Create a new branch for your work using a descriptive name.
-
-4. **Work**: Contribute to the project by completing your assigned tasks.
-
-5. **Commit**: Commit your changes with clear and concise commit messages.
-
-6. **Pull Request**: Create a pull request when you're ready to merge your changes into the main branch.
-
-7. **Code Review**: Collaborate with team members to review and refine the code.
-
-8. **Merge**: Once your code is approved, it will be merged into the main branch.
-
-## Feedback and Collaboration
-
-We value collaboration and feedback. If you have any suggestions, ideas, or questions, please feel free to reach out to any team member listed above.
-
-Let's work together to make this product launch a tremendous success!
 
 ---
+## Getting Started`*`
 
-**Note**: This README is a template. Please customize it to suit your project's specific details and requirements.
+### 1. Clone this repo`*`
 
-⭐ `Star this repo – it's where the magic happens!` ⭐
+```sh
+git clone https://github.com/purnasth/vite-react-tailwind-starter.git
+```
+
+### 2. Install and Run`*`
+
+Run the following commands in your terminal:
+
+```sh
+npm install
+npm run dev
+```
+
+- <b><em>`npm install`</em></b> to install the node_modules on your local repo which has been .gitignore in this github repo.
+- <b><em>`npm run dev`</em></b> for running this in your browser, by default it opens in port http://localhost:5173/
+
+------
+## Codes Used
+
+<b>`NOTE:`
+<em>
+Please disregard these below provided codes if you've already completed the first two steps of the "Getting Started" section. It's only meant for those interested in manually creating a Vite + React project with TailwindCSS.
+</em>
+</b>
+
+### Install vite + react
+
+```sh
+npm create vite@latest ./
+# Select a framework: React
+# Select a variant: JavaScript + SWC
+npm install
+npm run dev
+```
+
+### Install tailwindCSS
+
+```sh
+npm install -D tailwindcss postcss autoprefixer
+npx tailwindcss init -p
+```
+
+### Replace <em>`tailwind.config.js`</em> inner codes with
+
+```
+/** @type {import('tailwindcss').Config} \*/
+export default {
+content: [
+"./index.html",
+"./src/**/\*.{js,ts,jsx,tsx}",
+],
+theme: {
+extend: {},
+},
+plugins: [],
+}
+```
+
+### Paste these lines in <em>`index.css`</em>
+
+```
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+```
+
+### Import react icons
+
+```sh
+npm install react-icons --save
+```
+
+### Import axios
+
+```sh
+npm install axios
+```
+---
+<!--
+
+<details>
+<summary><h4>Install vite + react</h4></summary>
+<br/>
+<p>
+npm create vite@latest ./
+<br/>
+Select a framework: React
+<br/>
+Select a variant: JavaScript + SWC
+<br/>
+npm install
+<br/>
+npm run dev
+</p>
+<br/>
+</details>
+<details>
+<summary><h4>Install tailwindCSS</h4></summary>
+<br/>
+<p align="center">
+npm install -D tailwindcss postcss autoprefixer
+<br/>
+npx tailwindcss init -p
+</p>
+<br/>
+<br/>
+<h4 align="center">Replace tailwind.config.js inner codes with</h4>
+<br/>
+<p align="center">
+/** @type {import('tailwindcss').Config} \*/ <br/>
+export default { <br/>
+content: [ <br/>
+"./index.html", <br/>
+"./src/**/\*.{js,ts,jsx,tsx}", <br/>
+], <br/>
+theme: { <br/>
+extend: {}, <br/>
+}, <br/>
+plugins: [], <br/>
+} <br/>
+</p>
+
+<br/>
+<h4 align="center">Paste these lines in index.css</h4>
+<br/>
+<br/>
+<p align="center">
+@tailwind base;<br/>
+@tailwind components;<br/>
+@tailwind utilities;<br/>
+</p>
+
+</details>
+
+<details>
+<summary><h4>Import react icons</h4></summary>
+<br/>
+<p align="center">
+npm install react-icons --save</p>
+
+<br/>
+</details>
+
+<details>
+<summary><h4>Import axios</h4></summary>
+<br/>
+<p align="center">
+npm install axios
+</p>
+
+<br/>
+</details> -->
+
+
+
+⭐ Star this repo on GitHub — it helps!
