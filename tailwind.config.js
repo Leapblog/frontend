@@ -3,13 +3,13 @@ export default {
   theme: {
     extend: {
       colors: {
-        "bg-color": "#021a24",
-        "root": "#00cb5b",
-        "root-yellow": "#ffb001",
-        "light-green": "#1b5045",
-        "blue": "#0049df",
-        "red": "#f14d2a",
-        "white": "#E1F7EB",
+        "bg-clr": "#021a24",
+        "root-green-clr": "#00cb5b",
+        "root-yellow-clr": "#ffb001",
+        "light-green-clr": "#1b5045",
+        "blue-clr": "#0049df",
+        "red-clr": "#f14d2a",
+        "white-clr": "#E1F7EB",
       },
     },
   },
