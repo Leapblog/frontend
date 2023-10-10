@@ -3,7 +3,7 @@ import React from 'react';
 const Navbar = () => {
   return (
     <div>
-      Vite + React & TailwindCSS Starter Template
+      Welcome to LeapBlog.
     </div>
   );
 }
