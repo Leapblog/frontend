@@ -5,16 +5,22 @@ import { CgClose } from "react-icons/cg";
 import logoMobile from "../assets/leapblog.png";
 import logoDesktop from "../assets/leapblog_full.png";
 import purna from "../assets/purna.webp";
-
-const handleSearchButtonClick = () => {
-  // Handle search button click here
-};
+import SideNav from "./SideNav";
 
 const Header = () => {
   const [mobileMenu, setMobileMenu] = useState(false);
+  const [sideNavOpen, setSideNavOpen] = useState(window.innerWidth > 768);
 
   const mobileMenuToggle = () => {
     setMobileMenu(!mobileMenu);
+  };
+
+  const handleSearchButtonClick = () => {
+    // Handle search button click here
+  };
+
+  const toggleSideNav = () => {
+    setSideNavOpen(!sideNavOpen);
   };
 
   return (
@@ -25,9 +31,15 @@ const Header = () => {
           className="flex h-10 w-10 justify-center items-center rounded-full md:hidden md:mr-6 cursor-pointer hover:bg-gray-700 transition-all duration-500 ease-in-out"
         >
           {mobileMenu ? (
-            <CgClose className="text-white-clr text-xl" />
+            <CgClose
+              className="text-white-clr text-xl"
+              onClick={toggleSideNav}
+            />
           ) : (
-            <RxHamburgerMenu className="text-white-clr text-xl" />
+            <RxHamburgerMenu
+              className="text-white-clr text-xl"
+              onClick={toggleSideNav}
+            />
           )}
         </div>
         <a href="/" className="flex h-5 items-center select-none">
@@ -72,6 +84,7 @@ const Header = () => {
           </div>
         </div>
       </div>
+      <SideNav isOpen={sideNavOpen} onClose={toggleSideNav} />
     </div>
   );
 };
