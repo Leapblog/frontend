@@ -2,6 +2,29 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  @apply bg-bg-clr;
+@layer components {
+  .list {
+    @apply relative list-none w-[70px] h-[70px] z-10;
+  }
+  .a-css {
+    @apply relative text-lg font-medium flex items-center flex-col;
+  }
+  .icon {
+    @apply relative text-[1.75rem] leading-[75px] translate-y-5 block text-center text-white-clr transition-all duration-500 ease-in-out;
+  }
+  .text {
+    @apply absolute text-lg font-medium leading-[75px] text-root-yellow-clr transition-all duration-500 ease-in-out opacity-0;
+  }
+  /* .active-icon {
+    @apply bg-yellow-500 text-bg-clr text-sm relative p-5 w-[70px] h-[70px] rounded-full border-[5px] border-bg-clr -translate-y-6 transition-all duration-500 ease-in-out hover:-translate-y-6 hover:rotate-[1080deg] cursor-pointer;
+  } */
+  .active-logo {
+    @apply relative w-[70px] h-[70px] rounded-full -translate-y-6 transition-all duration-500 ease-in-out hover:-translate-y-6 hover:rotate-[1080deg] cursor-pointer z-50;
+  }
+  .active-logo-before {
+    @apply absolute top-0 -left-[15px] w-[15px] h-[15px] bg-transparent  rotate-[-90deg];
+  }
+  .active-logo-after {
+    @apply absolute top-0 -right-[15px] w-[15px] h-[15px] bg-transparent  rotate-[90deg] -z-10;
+  }
 }
