@@ -28,7 +28,7 @@ const Header = () => {
       <div className="flex h-5 items-center">
         <div
           onClick={mobileMenuToggle}
-          className="flex h-10 w-10 justify-center items-center rounded-full md:hidden md:mr-6 cursor-pointer hover:bg-gray-700 transition-all duration-500 ease-in-out"
+          className="flex h-10 w-10 justify-center items-center rounded-full lg:hidden md:mr-6 cursor-pointer hover:bg-gray-700 transition-all duration-500 ease-in-out"
         >
           {mobileMenu ? (
             <CgClose

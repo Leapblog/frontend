@@ -1,0 +1,62 @@
+:root {
+  --bg-clr: #021a24;
+  --root-yellow: #ffb001;
+  --light-yellow: rgba(255, 176, 1, 0.5);
+}
+
+body {
+  background-color: var(--bg-clr);
+}
+/* Keep this at top for better experience on mobile devices  */
+ul li:hover a .icon {
+  color: var(--light-yellow);
+  transform: translateY(-10px);
+}
+ul li:hover a .text {
+  color: var(--light-yellow);
+}
+ul li:hover ~ .indicator {
+  background: var(--light-yellow);
+}
+/* Keep this at top for better experience on mobile devices  */
+
+ul li.active a .icon {
+  color: var(--root-yellow);
+  transform: translateY(-10px);
+}
+
+ul li.active a .text,
+ul li:hover a .text {
+  color: var(--root-yellow);
+  opacity: 1;
+  transform: translateY(10px);
+}
+
+ul li:hover ~ .indicator {
+  background: var(--root-yellow);
+}
+
+ul li:nth-child(1):hover ~ .indicator,
+ul li:nth-child(1).active ~ .indicator {
+  transform: translateX(calc(70px * 0));
+}
+
+ul li:nth-child(2):hover ~ .indicator,
+ul li:nth-child(2).active ~ .indicator {
+  transform: translateX(calc(70px * 1));
+}
+
+/* ul li:nth-child:hover ~ .indicator,
+ul li:nth-child(3).active ~ .indicator {
+  transform: translateX(calc(70px * 2));
+} */
+
+ul li:nth-child(4):hover ~ .indicator,
+ul li:nth-child(4).active ~ .indicator {
+  transform: translateX(calc(70px * 3));
+}
+
+ul li:nth-child(5):hover ~ .indicator,
+ul li:nth-child(5).active ~ .indicator {
+  transform: translateX(calc(70px * 4));
+}
