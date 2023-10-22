@@ -1,0 +1,148 @@
+import React, { useState } from "react";
+import logo from "../assets/images/leapblog_naya_naya_green.svg";
+
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faArrowRightFromBracket,
+  faBars,
+  faGear,
+  faHome,
+  faMagnifyingGlass,
+  faPlus,
+  faXmark,
+} from "@fortawesome/free-solid-svg-icons";
+import { faBell, faHeart, faUser } from "@fortawesome/free-regular-svg-icons";
+
+const SideNavbar = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleSideNavbar = () => {
+    setIsOpen(!isOpen);
+  };
+
+  const navigationItems = [
+    { icon: <FontAwesomeIcon icon={faHome} />, label: "Home", link: "#" },
+    { icon: <FontAwesomeIcon icon={faUser} />, label: "User", link: "#" },
+    {
+      icon: <FontAwesomeIcon icon={faBell} />,
+      label: "Notifications",
+      link: "#",
+    },
+    { icon: <FontAwesomeIcon icon={faHeart} />, label: "Saved", link: "#" },
+    { icon: <FontAwesomeIcon icon={faGear} />, label: "Settings", link: "#" },
+  ];
+
+  return (
+    <div
+      className={`sideNavbar ${
+        isOpen ? "open w-60" : ""
+      } fixed left-0 top-0 h-full py-2 px-4 w-20 bg-bg-clr z-[99] transition-all duration-500 ease-in-out sidebar`}
+    >
+      <div className="h-16 flex items-center justify-between relative logo-details">
+        <a
+          href="/"
+          className={`${
+            isOpen ? "opacity-100" : "opacity-0 pointer-events-none"
+          }`}
+        >
+          <img
+            src={logo}
+            alt="leapblog"
+            className={`flex items-center justify-center w-32 transition-all duration-500 ease-in-out logo`}
+          />
+        </a>
+        <button
+          onClick={toggleSideNavbar}
+          className="text-white text-xl outline-none absolute top-1/2 right-4 transform -translate-y-1/2 cursor-pointer transition-all duration-500 ease-in-out"
+        >
+          {isOpen ? (
+            <FontAwesomeIcon icon={faXmark} />
+          ) : (
+            <FontAwesomeIcon icon={faBars} />
+          )}
+        </button>
+      </div>
+      <ul className="mt-5 h-full nav-list">
+        <li className="relative my-2 list-none">
+          <FontAwesomeIcon
+            icon={faPlus}
+            className="absolute top-1/2 left-4 -translate-y-1/2 text-[1rem]"
+          />
+          <input
+            type="button"
+            value="Create"
+            className={`input text-[1rem] font-medium ${
+              isOpen ? "w-full text-white-clr" : "text-bg-clr/10"
+            }`}
+          />
+        </li>
+        <li className="relative my-2 list-none">
+          <FontAwesomeIcon
+            icon={faMagnifyingGlass}
+            className="absolute top-1/2 left-4 -translate-y-1/2 text-[1rem]"
+            // onClick={toggleSideNavbar}
+          />
+          <input
+            type="text"
+            // placeholder="Search"
+            // value="Search"
+            className={`input text-[1rem] font-medium ${
+              isOpen ? "w-full pl-14 text-white-clr/80" : "text-bg-clr/10"
+            }`}
+          />
+        </li>
+        {navigationItems.map((item, index) => (
+          <li key={index} className="relative my-2 list-none">
+            <a
+              href={item.link}
+              className="flex items-center rounded-xl no-underline transition-all duration-200 ease-in-out hover:bg-white-clr hover:text-bg-clr"
+            >
+              <i className="icon absolute flex items-center justify-center">
+                {item.icon}
+              </i>
+              <span
+                className={`text-[1rem] whitespace-nowrap font-medium transition-all duration-400 ease-in-out flex items-center justify-start w-full py-3 pl-14 rounded-md ${
+                  isOpen
+                    ? "opacity-100 translate-x-0"
+                    : "opacity-0 -translate-x-6"
+                }`}
+              >
+                {item.label}
+              </span>
+            </a>
+            <span className="tooltip">{item.label}</span>
+          </li>
+        ))}
+        <li
+          className={`profile fixed left-0 bottom-1 px-4 pr-0 py-3 overflow-hidden flex items-center justify-between ${
+            isOpen ? "w-60" : ""
+          } `}
+        >
+          <div
+            className={`profile-details flex items-center flex-nowrap transition-all duration-300 ease-in-out ${
+              isOpen ? "opacity-100 scale-100" : "opacity-0 scale-0"
+            }`}
+          >
+            <img
+              src="https://www.purnashrestha.com.np/assets/img/purna%20pp1.png"
+              alt="Profile Picture"
+              className="w-12 h-12 rounded-md object-cover mr-3"
+            />
+            <div>
+              <div>Purna Shrestha</div>
+              <div>Web Designer</div>
+            </div>
+          </div>
+          <FontAwesomeIcon
+            icon={faArrowRightFromBracket}
+            className={`absolute top-1/2 -translate-y-1/2 text-[1rem] transition-all duration-500 ease-in-out ${
+              isOpen ? "right-6" : "right-[133px]"
+            }`}
+          />
+        </li>
+      </ul>
+    </div>
+  );
+};
+
+export default SideNavbar;

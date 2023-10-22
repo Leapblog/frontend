@@ -1,15 +1,13 @@
 import React from "react";
 import "./index.css";
-import Header from "./components/Header";
-import NavbarMobile from "./components/NavbarMobile";
+import SideNavbar from "./components/SideNavbar";
 
-function App() {
+const App = () => {
   return (
-    <>
-      <Header />
-      <NavbarMobile />
-    </>
+    <div>
+      <SideNavbar />
+    </div>
   );
-}
+};
 
 export default App;

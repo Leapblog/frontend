@@ -3,6 +3,12 @@
 @tailwind utilities;
 
 @layer components {
+  body {
+    /*@apply bg-bg-clr text-white-clr;*/
+    @apply text-white-clr;
+  }
+  /*! This was for previous navbar and sidenav */
+  /*
   .list {
     @apply relative list-none w-[70px] h-[70px] z-10;
   }
@@ -15,9 +21,9 @@
   .text {
     @apply absolute text-lg font-medium leading-[75px] text-root-yellow-clr transition-all duration-500 ease-in-out opacity-0;
   }
-  /* .active-icon {
+  .active-icon {
     @apply bg-yellow-500 text-bg-clr text-sm relative p-5 w-[70px] h-[70px] rounded-full border-[5px] border-bg-clr -translate-y-6 transition-all duration-500 ease-in-out hover:-translate-y-6 hover:rotate-[1080deg] cursor-pointer;
-  } */
+  }
   .active-logo {
     @apply relative w-[70px] h-[70px] rounded-full -translate-y-6 transition-all duration-500 ease-in-out hover:-translate-y-6 hover:rotate-[1080deg] cursor-pointer z-50;
   }
@@ -26,5 +32,15 @@
   }
   .active-logo-after {
     @apply absolute top-0 -right-[15px] w-[15px] h-[15px] bg-transparent  rotate-[90deg] -z-10;
+  }
+  */
+  .icon {
+    @apply h-12 w-12 text-[1rem] text-left uppercase overflow-hidden transition-all duration-200 ease-in-out;
+  }
+  .tooltip {
+    @apply absolute -top-6 left-[calc(100%+15px)] bg-white-clr shadow-lg py-2 px-3 rounded-md text-[1rem] whitespace-nowrap pointer-events-none opacity-0 transition-all duration-0 ease-in-out;
+  }
+  .input {
+    @apply outline-none h-12 w-12 bg-white-clr/10 border-none rounded-xl transition-all duration-300 ease-in-out;
   }
 }
