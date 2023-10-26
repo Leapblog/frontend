@@ -1,6 +1,6 @@
 import React from "react";
 
-const LogIn = () => {
+const Login = () => {
   return (
     <div className="flex items-center justify-center min-h-screen">
       <div className="bg-white-clr rounded-xl px-10 py-3">
@@ -32,7 +32,9 @@ const LogIn = () => {
           </div>
 
           <div>
-            <a href="#" className="text-sm text-gray-500">Forgot password?</a>
+            <a href="#" className="text-sm text-gray-500">
+              Forgot password?
+            </a>
             <div className="py-2 text-gray-600">
               <input type="checkbox" name="" id="" className="mr-3 " />
               <label htmlFor="Remember me">Remember Me</label>
@@ -63,4 +65,4 @@ const LogIn = () => {
   );
 };
 
-export default LogIn;
+export default Login;
