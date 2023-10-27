@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import logo from "../assets/images/leapblog_naya_naya_green.svg";
+import { NavLink, useLocation, useNavigate } from "react-router-dom";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -21,16 +22,38 @@ const SideNavbar = () => {
   };
 
   const navigationItems = [
-    { icon: <FontAwesomeIcon icon={faHome} />, label: "Home", link: "#" },
-    { icon: <FontAwesomeIcon icon={faUser} />, label: "User", link: "#" },
+    { icon: <FontAwesomeIcon icon={faHome} />, label: "Home", to: "/" },
+    { icon: <FontAwesomeIcon icon={faUser} />, label: "User", to: "/user" },
     {
       icon: <FontAwesomeIcon icon={faBell} />,
       label: "Notifications",
-      link: "#",
+      to: "/notifications",
     },
-    { icon: <FontAwesomeIcon icon={faHeart} />, label: "Saved", link: "#" },
-    { icon: <FontAwesomeIcon icon={faGear} />, label: "Settings", link: "#" },
+    {
+      icon: <FontAwesomeIcon icon={faHeart} />,
+      label: "Saved",
+      to: "/saved",
+    },
+    {
+      icon: <FontAwesomeIcon icon={faGear} />,
+      label: "Settings",
+      to: "/settings",
+    },
   ];
+
+  // FOr conditional rendering of the logo !IMPORTANT COMMENT
+  const location = useLocation();
+  const navigate = useNavigate();
+
+  const handleHomeLinkClick = () => {
+    if (location.pathname === "/") {
+      // If you're already on the home page, refresh the page
+      window.location.reload();
+    } else {
+      // If you're on another page, navigate to the home page
+      navigate("/");
+    }
+  };
 
   return (
     <div
@@ -39,8 +62,9 @@ const SideNavbar = () => {
       } fixed left-0 top-0 h-full py-2 px-4 w-20 bg-bg-clr z-[99] transition-all duration-500 ease-in-out sidebar`}
     >
       <div className="h-16 flex items-center justify-between relative logo-details">
-        <a
-          href="/"
+        <NavLink
+          to="/"
+          onClick={handleHomeLinkClick}
           className={`${
             isOpen ? "opacity-100" : "opacity-0 pointer-events-none"
           }`}
@@ -50,7 +74,7 @@ const SideNavbar = () => {
             alt="leapblog"
             className={`flex items-center justify-center w-32 transition-all duration-500 ease-in-out logo`}
           />
-        </a>
+        </NavLink>
         <button
           onClick={toggleSideNavbar}
           className="text-white text-xl outline-none absolute top-1/2 right-4 transform -translate-y-1/2 cursor-pointer transition-all duration-500 ease-in-out"
@@ -93,8 +117,8 @@ const SideNavbar = () => {
         </li>
         {navigationItems.map((item, index) => (
           <li key={index} className="relative my-2 list-none">
-            <a
-              href={item.link}
+            <NavLink
+              to={item.to}
               className="flex items-center rounded-xl no-underline transition-all duration-200 ease-in-out hover:bg-white-clr hover:text-bg-clr"
             >
               <i className="icon absolute flex items-center justify-center">
@@ -109,7 +133,7 @@ const SideNavbar = () => {
               >
                 {item.label}
               </span>
-            </a>
+            </NavLink>
             <span className="tooltip">{item.label}</span>
           </li>
         ))}
@@ -133,12 +157,14 @@ const SideNavbar = () => {
               <div>Web Designer</div>
             </div>
           </div>
-          <FontAwesomeIcon
-            icon={faArrowRightFromBracket}
-            className={`absolute top-1/2 -translate-y-1/2 text-[1rem] transition-all duration-500 ease-in-out ${
-              isOpen ? "right-6" : "right-[133px]"
-            }`}
-          />
+          <NavLink to="/logout">
+            <FontAwesomeIcon
+              icon={faArrowRightFromBracket}
+              className={`absolute top-1/2 -translate-y-1/2 text-[1rem] transition-all duration-500 ease-in-out ${
+                isOpen ? "right-6" : "right-[133px]"
+              }`}
+            />
+          </NavLink>
         </li>
       </ul>
     </div>

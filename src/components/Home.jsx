@@ -1,10 +1,9 @@
 import React from "react";
-import SideNavbar from "./SideNavbar";
 
 const Home = () => {
   return (
-    <div>
-      <SideNavbar />
+    <div className="flex items-center justify-center text-black">
+      <h2 className="text-2xl">This is a home page.</h2>
     </div>
   );
 };
