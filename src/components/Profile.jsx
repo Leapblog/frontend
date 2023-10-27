@@ -37,8 +37,8 @@ const Profile = ({ isOpen }) => {
   return (
     <div
       className={`fixed inset-0 ${
-        isOpen ? "w-[calc(100%-240px)]" : "w-[calc(100%-80px)]"
-      } h-[100vh] ml-auto bg-bg-clr z-10 transition-all duration-500 ease-in-out`}
+        isOpen ? "md:w-[calc(100%-240px)]" : "md:w-[calc(100%-80px)]"
+      } w-full h-[100vh] ml-auto bg-bg-clr z-10 transition-all duration-500 ease-in-out`}
     >
       <div className="p-5 md:p-10">
         <div className="flex items-center justify-between mb-4 w-full">

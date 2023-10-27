@@ -62,9 +62,9 @@ const SideNavbar = () => {
 
   return (
     <div
-      className={`sideNavbar ${
+      className={`sideNavbar fixed left-0 top-0 h-full py-2 px-4 w-20 bg-bg-clr z-50 transition-all duration-500 ease-in-out sidebar ${
         isOpen ? "open w-60" : ""
-      } fixed left-0 top-0 h-full py-2 px-4 w-20 bg-bg-clr z-[99] transition-all duration-500 ease-in-out sidebar`}
+      } `}
     >
       <div className="h-16 flex items-center justify-between relative logo-details">
         <NavLink
@@ -172,7 +172,7 @@ const SideNavbar = () => {
           </NavLink>
         </li>
       </ul>
-      {location.pathname === "/profile" && <Profile isOpen={isOpen} />}{" "}
+      {/* {location.pathname === "/profile" && <Profile isOpen={isOpen} />}{" "} */}
     </div>
   );
 };
