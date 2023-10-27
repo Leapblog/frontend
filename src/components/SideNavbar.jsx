@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import logo from "../assets/images/leapblog_naya_naya_green.svg";
 import { NavLink, useLocation, useNavigate } from "react-router-dom";
-import Profile from "./Profile";
+// import Profile from "./Profile";
+import user from "../assets/purna.webp";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -153,7 +154,7 @@ const SideNavbar = () => {
             }`}
           >
             <img
-              src="https://www.purnashrestha.com.np/assets/img/purna%20pp1.png"
+              src={user}
               alt="Profile Picture"
               className="w-12 h-12 rounded-md object-cover mr-3"
             />
