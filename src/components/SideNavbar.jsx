@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import logo from "../assets/images/leapblog_naya_naya_green.svg";
 import { NavLink, useLocation, useNavigate } from "react-router-dom";
+import Profile from "./Profile";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -23,7 +24,11 @@ const SideNavbar = () => {
 
   const navigationItems = [
     { icon: <FontAwesomeIcon icon={faHome} />, label: "Home", to: "/" },
-    { icon: <FontAwesomeIcon icon={faUser} />, label: "User", to: "/user" },
+    {
+      icon: <FontAwesomeIcon icon={faUser} />,
+      label: "Profile",
+      to: "/profile",
+    },
     {
       icon: <FontAwesomeIcon icon={faBell} />,
       label: "Notifications",
@@ -167,6 +172,7 @@ const SideNavbar = () => {
           </NavLink>
         </li>
       </ul>
+      {location.pathname === "/profile" && <Profile isOpen={isOpen} />}{" "}
     </div>
   );
 };
