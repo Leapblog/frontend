@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import logo from "../assets/images/leapblog_naya_naya_green.svg";
 import { NavLink, useLocation, useNavigate } from "react-router-dom";
+// import Profile from "./Profile";
+import user from "../assets/purna.webp";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -23,7 +25,11 @@ const SideNavbar = () => {
 
   const navigationItems = [
     { icon: <FontAwesomeIcon icon={faHome} />, label: "Home", to: "/" },
-    { icon: <FontAwesomeIcon icon={faUser} />, label: "User", to: "/user" },
+    {
+      icon: <FontAwesomeIcon icon={faUser} />,
+      label: "Profile",
+      to: "/profile",
+    },
     {
       icon: <FontAwesomeIcon icon={faBell} />,
       label: "Notifications",
@@ -57,9 +63,9 @@ const SideNavbar = () => {
 
   return (
     <div
-      className={`sideNavbar ${
+      className={`sideNavbar fixed left-0 top-0 h-full py-2 px-4 w-20 bg-bg-clr z-50 transition-all duration-500 ease-in-out sidebar ${
         isOpen ? "open w-60" : ""
-      } fixed left-0 top-0 h-full py-2 px-4 w-20 bg-bg-clr z-[99] transition-all duration-500 ease-in-out sidebar`}
+      } `}
     >
       <div className="h-16 flex items-center justify-between relative logo-details">
         <NavLink
@@ -148,7 +154,7 @@ const SideNavbar = () => {
             }`}
           >
             <img
-              src="https://www.purnashrestha.com.np/assets/img/purna%20pp1.png"
+              src={user}
               alt="Profile Picture"
               className="w-12 h-12 rounded-md object-cover mr-3"
             />
@@ -167,6 +173,7 @@ const SideNavbar = () => {
           </NavLink>
         </li>
       </ul>
+      {/* {location.pathname === "/profile" && <Profile isOpen={isOpen} />}{" "} */}
     </div>
   );
 };
