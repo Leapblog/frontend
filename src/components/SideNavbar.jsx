@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import logo from "../assets/images/leapblog_naya_naya_green.svg";
+// import logo from "../assets/images/leapblog_naya_naya_green.svg";
+import logo from "/leapblog.svg";
 import { NavLink, useLocation, useNavigate } from "react-router-dom";
 // import Profile from "./Profile";
 import user from "../assets/purna.webp";
@@ -77,6 +78,8 @@ const SideNavbar = () => {
         >
           <img
             src={logo}
+            // src="https://www.lftechnology.com/images/lf-logo.svg"
+
             alt="leapblog"
             className={`flex items-center justify-center w-32 transition-all duration-500 ease-in-out logo`}
           />
