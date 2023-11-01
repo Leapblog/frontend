@@ -1,8 +1,6 @@
-<h1 align="center">Leapblog</h1>
-
-<div align="center">
-  <img src="/public/leapblog.svg" alt="Leapblog" width="400">
-</div>
+<h1 align="center">
+  <img src="/public/leapblog.svg" alt="Leapblog" width="600">
+</h1>
 
 ---
 
@@ -160,6 +158,8 @@ Need assistance? You can tag our maintainers with: `@username`
 
 
 ## Contributors
+
+[![Contributors](https://contrib.rocks/image?repo=Leapblog/frontend)](https://github.com/Leapblog/frontend/graphs/contributors)
 
 
 ## Feedback and Collaboration
