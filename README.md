@@ -1,104 +1,166 @@
-<h1 align="center">Leapfrog Product Launch</h1>
-
-<div align="center">
-  <img src="https://studentpartner.lftechnology.com/assets/images/student-partnership-logo.svg" alt="Leapfrog Student Partnership Logo" width="400">
-</div>
+<h1 align="center">
+  <img src="/public/leapblog.svg" alt="Leapblog" width="600">
+</h1>
 
 ---
 
 <div align="center">
   <img
     alt="GitHub repo size"
-    src="https://img.shields.io/github/repo-size/purnasth/leapfrog-product-launch?color=FFB001&logo=github&style=for-the-badge&logoColor=00CB5B"
+    src="https://img.shields.io/github/repo-size/Leapblog/frontend?color=FFB001&logo=github&style=for-the-badge&logoColor=00CB5B"
   />
   <img
     alt="GitHub forks"
-    src="https://img.shields.io/github/forks/purnasth/leapfrog-product-launch?color=FFB001&logo=github&style=for-the-badge&logoColor=00CB5B"
+    src="https://img.shields.io/github/forks/Leapblog/frontend?color=FFB001&logo=github&style=for-the-badge&logoColor=00CB5B"
   />
   <img
     alt="GitHub Repo stars"
-    src="https://img.shields.io/github/stars/purnasth/leapfrog-product-launch?color=FFB001&logo=github&style=for-the-badge&logoColor=00CB5B"
+    src="https://img.shields.io/github/stars/Leapblog/frontend?color=FFB001&logo=github&style=for-the-badge&logoColor=00CB5B"
   />
   <img
     alt="Last commit"
-    src="https://img.shields.io/github/last-commit/purnasth/leapfrog-product-launch?color=FFB001&logo=git&logoColor=00CB5B&style=for-the-badge"
+    src="https://img.shields.io/github/last-commit/Leapblog/frontend?color=FFB001&logo=git&logoColor=00CB5B&style=for-the-badge"
   />
   <img
     alt="Commit activity"
-    src="https://img.shields.io/github/commit-activity/m/purnasth/leapfrog-product-launch?color=FFB001&logo=git&logoColor=00CB5B&style=for-the-badge"
+    src="https://img.shields.io/github/commit-activity/m/Leapblog/frontend?color=FFB001&logo=git&logoColor=00CB5B&style=for-the-badge"
   />
 </div>
 
 ## Overview
 
-Welcome to the Leapfrog Product Launch project! In this repository, we are excited to introduce you to our team and provide an overview of the task assigned by Leapfrog. The task involves creating a phenomenal product launch for a project, and we are thrilled to be part of this exciting journey.
+Welcome to Leapblog, the online haven created specifically for the dazzling minds of Leapfrog Student Partners! 
 
-## Team Members and Roles
+Your thoughts will take flight and your words will find a home here. Share your coding triumphs, technological riddles, and one-of-a-kind experiences in a thriving community where tales influence the future.
 
-Here are the team members and their respective roles:
+This repository is the frontend portal of Leapblog. For backend repository, [click here](https://github.com/Leapblog/backend)
 
-1. **`Aditi Kharel`**
-2. **`Anupama Rai`**
-3. **`Astika Gurung`**
-4. **`Brihat Lamichhaney`**
-5. **`Kushal Dhakal`**
-6. **`Nishant Sapkota`**
-7. **`Purna Shrestha`**
-   - Web Development Lead, Presentation Assist, Design Assist, Final Product Launch Assist
+## Maintainers
+Need assistance? You can tag our maintainers with: `@username`
 
-## Task Description
 
-Our task, assigned by Leapfrog, is to plan and execute a remarkable product launch for our project. Here's a brief overview of what this entails:
-
-- **Project Scope**: Our project manager, `Brihat Lamichhaney`, will work with everyone to define the scope of the project, including its objectives, target audience, and success criteria.
-
-- **Launch Strategy**: We will strategize how to create buzz and anticipation for the product launch, considering factors like timing, marketing channels, and promotional activities.
-
-- **Design and Branding**: Our designer lead, `Astika Gurung`, will create eye-catching visuals and branding elements to make the launch memorable.
-
-- **Web/App Development**: Our development team, led by `Purna Shrestha`, will create an exceptional product or feature, ensuring it meets quality and functionality standards. `Aditi Kharel`, `Anupama Rai`, and `Nishant Sapkota` will assist in frontend and backend development.
-
-- **Testing**: Our QA expert will rigorously test the product to identify and resolve any issues, ensuring a smooth user experience.
-
-- **Content Creation**: `Nishant Sapkota` will lead content creation with the assistance of everyone, including press releases, blog posts, and social media updates.
-
-- **User Feedback**: We will gather user feedback and iterate on the product based on their suggestions and needs.
-
-- **Launch Event**: `Kushal Dhakal` will lead the creation of presentation slides and organize a launch event to showcase the product to the world.
-
-- **Final Product Launch**: We, the LSPs, will launch the product and celebrate our success!
-
-## Tools Used
-
-Some of the tools used in this project include:
-
-- Figma for UI/UX design
-- react.js for frontend development
-- node.js for backend development
-- Tailwind CSS for styling
-- Git for version control
-- Cloudflare for web hosting and security
-- PowerPoint 365 for presentation
+<table>
+  <tr>
+    <td align="center" width="200">
+      <pre><a href="https://github.com/purnasth" target="_blank"><img src="https://avatars.githubusercontent.com/u/107195487?v=4" width="200" alt="GitHub Profile of Purna Shrestha" /><br><sub>Purna Shrestha</sub></a></pre>
+    </td>
+    <td align="center" width="200">
+      <pre><a href="https://github.com/Br9ha20" target="_blank"><img src="https://avatars.githubusercontent.com/u/78255598?v=4" width="200" alt="GitHub Profile of Brihat Lamichhaney" /><br><sub>Brihat Lamichhaney</sub></a></pre>
+    </td>
+    <td align="center" width="200">
+      <pre><a href="https://github.com/Anupamaraie" target="_blank"><img src="https://avatars.githubusercontent.com/u/91787285?v=4" width="200" alt="GitHub Profile of Anupama Rai" /><br><sub>Anupama Rai</sub></a></pre>
+    </td>
+  </tr>
+</table>
 
 ## How to Contribute
 
-If you're part of the team to this project, please follow these steps:
+1. **Fork the Repository**: 
+    - Fork this repository by clicking the `Fork` button at the top right of this page.
 
-1. **Fork the Repository**: Fork this repository by clicking the "Fork" button at the top right of this page.
+2. **Clone the Repository**: 
+    ```bash
+    git clone https://github.com/<your-username>/frontend.git
+    ```
+    ```bash
+    cd frontend
+    ```
 
-2. **Clone the Repository**: Clone your forked repository to your local machine.
+3. **Install all dependencies**: 
+    ```bash
+    npm install
+    ```
+    ```bash
+    npm run dev
+    ```
 
-3. **Branching**: Create a new branch for your work using a descriptive name.
+4. **Branching**: 
+    ```bash
+    git checkout -b feat/your-feature-name
+    ```
 
-4. **Work**: Contribute to the project by completing your assigned tasks.
+5. **Work**: 
+    - Contribute to the project by completing your `assigned` tasks.
 
-5. **Commit**: Commit your changes with clear and concise commit messages.
+6. **Commit**: Commit your changes with clear and concise commit messages.
+    ```bash
+    git add .
+    ```
+    ```bash
+    git commit -m "your commit message"
+    ```
 
-6. **Pull Request**: Create a pull request when you're ready to merge your changes into the main branch.
+7. **Push**: Push your changes to your forked repository.
+    ```bash
+    git push origin feat/your-feature-name
+    ```
 
-7. **Code Review**: Collaborate with team members to review and refine the code.
+7. **Pull Request**: 
+    - Create a `Pull request` when you're ready to merge your changes into the main branch.
 
-8. **Merge**: Once your code is approved, it will be merged into the main branch.
+8. **Code Review**: 
+    - Discuss with maintainers to review and refine the code.
+
+9. **Merge**: 
+    - Once your code is approved, it will be merged into the main branch.
+
+## Issue Guidelines
+
+1. **Create/Select an Issue**:
+    - Select an *"Issues"* you want to work on.
+    
+    OR
+    - Create an *"Issues"*.
+
+2. **Duplication of the Issue**:
+    - Check if the *"Issues"* you want to work on has already been *assigned* to someone else.
+    
+    OR
+    - Check if the *"Issues"* you are not raising a *duplicate issue*.
+
+3. **Assign the Issue**:
+    - Start working on the issue after it has been *assigned* to you.
+
+4. **Work on the Issue**:
+    - Work on *One Issue* at a time.
+
+## Commits Message Guidelines 💬
+
+1. **Type**: The commit type must be one of the following:
+
+   - `feat`: A new feature or enhancement.
+   - `fix`: A bug fix.
+   - `docs`: Documentation changes.
+   - `refactor`: Code refactoring with no feature changes or bug fixes.
+
+2. **Description**: A brief and meaningful description of the changes made. Start with a capital letter and use the imperative mood (e.g., "Add new feature" instead of "Added new feature").
+
+3. **Issue reference** (Optional): Include the issue number associated with the commit (e.g., `#111`).
+
+#### ✔️ Examples of Valid Commit Messages for Leapblog
+
+- `feat: Implement Markdown editor for blog posts`
+- `fix(auth): Resolve OAuth login callback issue`
+- `docs: Update contributor guidelines`
+- `style: Standardize color scheme for UI elements`
+- `refactor(blog): Optimize image loading for faster performance`
+- `test: Write integration tests for comment functionality`
+- `chore: Upgrade server framework to the latest version`
+- `fix: Handle edge case in blog rendering (#123)`
+
+#### ❌ Examples of Invalid Commit Messages for Leapblog
+
+- `Added new feature`
+- `Fixed a bug`
+- `Updated code`
+- `Auth feature update`
+- `chore: Fixed some stuff`
+
+
+## Contributors
+
+[![Contributors](https://contrib.rocks/image?repo=Leapblog/frontend)](https://github.com/Leapblog/frontend/graphs/contributors)
+
 
 ## Feedback and Collaboration
 
@@ -108,6 +170,6 @@ Let's work together to make this product launch a tremendous success!
 
 ---
 
-**Note**: This README is a template. Please customize it to suit your project's specific details and requirements.
+**Note**: This README is your canvas, waiting to be painted with the vibrant colors and unique strokes that define Leapblog.
 
 ⭐ `Star this repo – it's where the magic happens!` ⭐
