@@ -43,4 +43,7 @@
   .input {
     @apply outline-none h-12 w-12 bg-white-clr/10 border-none rounded-xl transition-all duration-300 ease-in-out;
   }
+  .user-social {
+    @apply flex items-center justify-center border-[1px] border-root-yellow-clr text-root-yellow-clr text-lg rounded-md text-center p-3 hover:bg-root-yellow-clr hover:text-bg-clr transition-all duration-300 ease-in-out;
+  }
 }
