@@ -1,15 +1,15 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import axios from "axios";
 
 const SignUp = () => {
-
   const [email, emailchange] = useState("");
   const [username, usernamechange] = useState("");
   const [password, passwordchange] = useState("");
   const [confirm_password, confirm_passwordchange] = useState("");
   const [type, typechange] = useState("");
 
-  const handlesubmit=(e) => {
+  const handlesubmit = (e) => {
     e.preventDefault();
 
     const regObj = {
@@ -37,11 +37,9 @@ const SignUp = () => {
         console.error("Error:", error);
       });
   };
-  
-
 
   return (
-    <div className="flex items-center justify-center min-h-screen">
+    <div className="fixed flex items-center justify-center min-h-screen w-full z-[99] bg-white">
       <div className="bg-white-clr rounded-xl px-10 py-3">
         <form action="" className="text-black" onSubmit={handlesubmit}>
           <h2 className="text-lg text-root-yellow-clr font-semibold pb-2 text-center">
@@ -52,7 +50,8 @@ const SignUp = () => {
               Full Name
             </label>
             <input
-              value={username} onChange={e=>usernamechange(e.target.value)}
+              value={username}
+              onChange={(e) => usernamechange(e.target.value)}
               type="text"
               className="border-2 border-gray-300 rounded w-64 text-sm p-1 placeholder:p-2 placeholder:text-2x1 placeholder:italic"
               placeholder="abc def"
@@ -61,7 +60,8 @@ const SignUp = () => {
           <div className="pb-2 flex flex-col">
             <label htmlFor="">Email</label>
             <input
-              value={email} onChange={e=>emailchange(e.target.value)}
+              value={email}
+              onChange={(e) => emailchange(e.target.value)}
               type="email"
               className="border-2 border-gray-300 rounded w-64 text-sm p-1 placeholder:p-2 placeholder:text-2x1 placeholder:italic"
               placeholder="someone@gmail.com"
@@ -70,7 +70,8 @@ const SignUp = () => {
           <div className="pb-2 flex flex-col">
             <label htmlFor="">Password</label>
             <input
-              value={password} onChange={e=>passwordchange(e.target.value)}
+              value={password}
+              onChange={(e) => passwordchange(e.target.value)}
               type="password"
               className="border-2 border-gray-300 rounded w-64 text-sm p-1 placeholder:p-2 placeholder:text-2x1 placeholder:italic"
               placeholder="Password"
@@ -79,7 +80,8 @@ const SignUp = () => {
           <div className="pb-3 flex flex-col">
             <label htmlFor="">Re-enter Password</label>
             <input
-              value={confirm_password} onChange={e=>confirm_passwordchange(e.target.value)}
+              value={confirm_password}
+              onChange={(e) => confirm_passwordchange(e.target.value)}
               type="password"
               className="border-2 border-gray-300 rounded w-64 text-sm p-1 placeholder:p-2 placeholder:text-2x1 placeholder:italic"
               placeholder="Re-enter Password"
@@ -88,7 +90,8 @@ const SignUp = () => {
           <div className="pb-3 flex flex-col">
             <label htmlFor="">Type</label>
             <input
-              value={type} onChange={e=>typechange(e.target.value)}
+              value={type}
+              onChange={(e) => typechange(e.target.value)}
               type="text"
               className="border-2 border-gray-300 rounded w-64 text-sm p-1 placeholder:p-2 placeholder:text-2x1 placeholder:italic"
               placeholder="lspp"
@@ -103,7 +106,12 @@ const SignUp = () => {
           <div className="my-2 text-center">
             <span className="text-gray-500">
               Already have an account?
-              <a  href="#" className="text-sm text-root-yellow-clr ml-2 hover:underline">Log in</a>
+              <Link
+                to="/login"
+                className="text-sm text-root-yellow-clr ml-2 hover:underline"
+              >
+                Log in
+              </Link>
             </span>
           </div>
         </form>

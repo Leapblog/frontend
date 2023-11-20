@@ -8,6 +8,7 @@ import { BiRepost } from "react-icons/bi";
 import { FiShare } from "react-icons/fi";
 
 import user from "../assets/purna.webp";
+import LoginButton from "./Batch/LoginButton";
 
 const Home = () => {
   const [blogs, setBlogs] = useState([]);
@@ -268,7 +269,7 @@ const Home = () => {
                     <span className="engagements">{blog.likeCount}</span>
                   </button>
                   <button className="text-blue-600 relative">
-                    <FaRegComment className="scale-x-100" />{" "}
+                    <FaRegComment className="-scale-x-100" />{" "}
                     <span className="engagements">{blog.commentCount}</span>
                   </button>
                   <button className="text-green-600 relative">
@@ -286,6 +287,7 @@ const Home = () => {
           ))}
         </ul>
       </div>
+      <LoginButton />
     </div>
   );
 };
