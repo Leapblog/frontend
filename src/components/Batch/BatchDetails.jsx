@@ -1,5 +1,9 @@
 import React, { useState, useEffect } from "react";
 import { useParams, Link } from "react-router-dom";
+
+import { FaLinkedinIn } from "react-icons/fa";
+import { TbWorldWww } from "react-icons/tb";
+
 import user from "../../assets/purna.webp";
 
 const BatchDetails = () => {
@@ -78,19 +82,20 @@ const BatchDetails = () => {
 
               <h4 className="text-xl font-semibold my-3">{member.name}</h4>
               <Link
-                to={member.linkedIn}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                LinkedIn
-              </Link>
-              <Link
                 to={member.portfolio}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="ml-3"
+                className="ml-1 inline-block"
               >
-                Portfolio
+                <TbWorldWww />
+              </Link>
+              <Link
+                to={member.linkedIn}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="ml-3 inline-block"
+              >
+                <FaLinkedinIn />
               </Link>
             </li>
           ))}
