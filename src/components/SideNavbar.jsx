@@ -12,27 +12,36 @@ import {
   faHome,
   faUserGroup,
   faMagnifyingGlass,
-  faPlus,
   faXmark,
+  faPlus,
 } from "@fortawesome/free-solid-svg-icons";
 import { faBell, faHeart, faUser } from "@fortawesome/free-regular-svg-icons";
 
+import { HiOutlineHome } from "react-icons/hi";
+import { MdOutlineSettings } from "react-icons/md";
+import { LiaUsersSolid } from "react-icons/lia";
+
 const SideNavbar = () => {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(window.innerWidth > 768);
+  const [activeIndex, setActiveIndex] = useState(0);
 
   const toggleSideNavbar = () => {
     setIsOpen(!isOpen);
   };
 
+  const handleItemClick = (index) => {
+    setActiveIndex(index);
+  };
+
   const navigationItems = [
-    { icon: <FontAwesomeIcon icon={faHome} />, label: "Home", to: "/" },
+    { icon: <HiOutlineHome className="text-xl"/>, label: "Home", to: "/" },
     {
       icon: <FontAwesomeIcon icon={faUser} />,
       label: "Profile",
       to: "/profile",
     },
     {
-      icon: <FontAwesomeIcon icon={faUserGroup} />,
+      icon: <LiaUsersSolid className="text-2xl"/>,
       label: "Batch",
       to: "/batch",
     },
@@ -47,7 +56,7 @@ const SideNavbar = () => {
       to: "/saved",
     },
     {
-      icon: <FontAwesomeIcon icon={faGear} />,
+      icon: <MdOutlineSettings className="text-xl" />,
       label: "Settings",
       to: "/settings",
     },
@@ -89,7 +98,7 @@ const SideNavbar = () => {
         </NavLink>
         <button
           onClick={toggleSideNavbar}
-          className="text-white text-xl outline-none absolute top-1/2 right-4 transform -translate-y-1/2 cursor-pointer transition-all duration-500 ease-in-out"
+          className="text-white-clr text-xl outline-none absolute top-1/2 right-4 transform -translate-y-1/2 cursor-pointer transition-all duration-500 ease-in-out"
         >
           {isOpen ? (
             <FontAwesomeIcon icon={faXmark} />
@@ -102,7 +111,7 @@ const SideNavbar = () => {
         <li className="relative my-2 list-none">
           <FontAwesomeIcon
             icon={faPlus}
-            className="absolute top-1/2 left-4 -translate-y-1/2 text-[1rem]"
+            className="function-navlist"
           />
           <input
             type="button"
@@ -115,12 +124,12 @@ const SideNavbar = () => {
         <li className="relative my-2 list-none">
           <FontAwesomeIcon
             icon={faMagnifyingGlass}
-            className="absolute top-1/2 left-4 -translate-y-1/2 text-[1rem]"
-            // onClick={toggleSideNavbar}
+            className="function-navlist"
+            onClick={toggleSideNavbar}
           />
           <input
             type="text"
-            // placeholder="Search"
+            placeholder="Search here"
             // value="Search"
             className={`input text-[1rem] font-medium ${
               isOpen ? "w-full pl-14 text-white-clr/80" : "text-bg-clr/10"
@@ -128,16 +137,27 @@ const SideNavbar = () => {
           />
         </li>
         {navigationItems.map((item, index) => (
-          <li key={index} className="relative my-2 list-none">
+          <li
+            key={index}
+            className={`relative my-2 list-none ${
+              activeIndex === index
+                ? "active bg-white-clr text-bg-clr rounded-xl"
+                : ""
+            }`}
+            onClick={() => handleItemClick(index)}
+          >
             <NavLink
               to={item.to}
               className="flex items-center rounded-xl no-underline transition-all duration-200 ease-in-out hover:bg-white-clr hover:text-bg-clr"
             >
-              <i className="icon absolute flex items-center justify-center">
+              {/* <i className="icon absolute flex items-center justify-center bg-bg-clr hover:bg-white-clr rounded-xl z-10">
+                {item.icon}
+              </i> */}
+              <i className="icon absolute flex items-center justify-center z-10">
                 {item.icon}
               </i>
               <span
-                className={`text-[1rem] whitespace-nowrap font-medium transition-all duration-400 ease-in-out flex items-center justify-start w-full py-3 pl-14 rounded-md ${
+                className={`text-[1rem] whitespace-nowrap font-medium transition-all duration-400 ease-in-out flex items-center justify-start w-full py-3 pl-14 rounded-md z-[9] ${
                   isOpen
                     ? "opacity-100 translate-x-0"
                     : "opacity-0 -translate-x-6"
@@ -155,8 +175,11 @@ const SideNavbar = () => {
           } `}
         >
           <div
-            className={`profile-details flex items-center flex-nowrap transition-all duration-300 ease-in-out ${
-              isOpen ? "opacity-100 scale-100" : "opacity-0 scale-0"
+            className={`profile-details flex items-center flex-nowrap transition-all duration-300 ease-in-out delay-100 ${
+              // isOpen ? "opacity-100 scale-100" : "opacity-0 scale-0"
+              isOpen
+                ? "translate-x-0 opacity-100 scale-100"
+                : "translate-x-1/2 opacity-0 scale-50 -z-5"
             }`}
           >
             <img

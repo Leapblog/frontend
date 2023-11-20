@@ -1,13 +1,10 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faUserPen,
-  faEllipsisVertical,
-  faGlobe,
-} from "@fortawesome/free-solid-svg-icons";
-import { faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
-// import { faGlobe } from "@fortawesome/free-regular-svg-icons";
+
+import { FaLinkedinIn, FaUserCog } from "react-icons/fa";
+import { FaEllipsisVertical } from "react-icons/fa6";
+import { TbWorldWww } from "react-icons/tb";
+
 import purna from "../assets/purna.webp";
 
 const userDetails = {
@@ -70,33 +67,19 @@ const Profile = ({ isOpen }) => {
             <div className="flex space-x-2">
               <Link
                 to="#"
-                className="flex items-center justify-center bg-root-yellow-clr text-bg-clr font-semibold rounded-md text-center py-2 px-4 border-[1px] border-root-yellow-clr hover:bg-transparent hover:text-root-yellow-clr transition-all duration-300 ease-in-out"
+                className="flex items-center justify-center bg-root-yellow-clr text-bg-clr font-semibold rounded-md text-center px-3 border-[1px] border-root-yellow-clr hover:bg-transparent hover:text-root-yellow-clr transition-all duration-300 ease-in-out"
               >
-                <FontAwesomeIcon icon={faUserPen} className="mr-1" />
+                <FaUserCog className="mr-1 text-xl" />
                 Edit
               </Link>
-              <Link
-                to={userDetails.portfolioLink}
-                className="user-social"
-              >
-                <FontAwesomeIcon
-                  icon={faGlobe}
-                />
+              <Link to={userDetails.portfolioLink} className="user-social">
+                <TbWorldWww />
               </Link>
-              <Link
-                to={userDetails.linkedinLink}
-                className="user-social"
-              >
-                {/* <FaLinkedinIn className="text-lg text-root-yellow-clr" /> */}
-                <FontAwesomeIcon
-                  icon={faLinkedinIn}
-                />
+              <Link to={userDetails.linkedinLink} className="user-social">
+                <FaLinkedinIn />
               </Link>
               <Link to="#settings" className="flex items-center">
-                <FontAwesomeIcon
-                  icon={faEllipsisVertical}
-                  className="text-gray-500 text-2xl p-2"
-                />
+                <FaEllipsisVertical className="text-gray-500 text-xl -ml-1" />
               </Link>
             </div>
           </div>
