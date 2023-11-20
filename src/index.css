@@ -49,4 +49,7 @@
   .function-navlist {
     @apply absolute top-1/2 left-0 -translate-y-1/2 text-[1rem] bg-[#193038] hover:bg-white-clr hover:text-bg-clr p-4 rounded-xl transition-all duration-200 ease-in-out cursor-pointer;
   }
+  .engagements {
+    @apply absolute -top-2 left-6 text-sm;
+  }
 }
