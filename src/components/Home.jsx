@@ -1,5 +1,14 @@
 import React, { useState, useEffect } from "react";
+
+import { GiFrogFoot } from "react-icons/gi";
+// import { GiFrogPrince } from "react-icons/gi";
+import { FaRegComment } from "react-icons/fa";
+// import { TfiCommentsSmiley } from "react-icons/tfi";
+import { BiRepost } from "react-icons/bi";
+import { FiShare } from "react-icons/fi";
+
 import user from "../assets/purna.webp";
+import LoginButton from "./Batch/LoginButton";
 
 const Home = () => {
   const [blogs, setBlogs] = useState([]);
@@ -252,21 +261,25 @@ const Home = () => {
                   </h4>
                 </div>
               </div>
-              <div className="flex items-center justify-between mt-4">
-                <div>
-                  <button className="text-gray-600 mr-4">
-                    Likes ({blog.likeCount})
+              <div className="flex items-center justify-between mt-4 text-xl">
+                <div className="flex items-center w-1/2 justify-between ml-2">
+                  <button className="text-gray-600 relative">
+                    {/* <GiFrogPrince /> */}
+                    <GiFrogFoot />{" "}
+                    <span className="engagements">{blog.likeCount}</span>
                   </button>
-                  <button className="text-blue-600 mr-4">
-                    Comment ({blog.commentCount})
+                  <button className="text-blue-600 relative">
+                    <FaRegComment className="-scale-x-100" />{" "}
+                    <span className="engagements">{blog.commentCount}</span>
                   </button>
-                  <button className="text-green-600">
-                    Repost ({blog.repostCount})
+                  <button className="text-green-600 relative">
+                    <BiRepost className="scale-y-150" />
+                    <span className="engagements">{blog.repostCount}</span>
                   </button>
                 </div>
                 <div>
-                  <button className="bg-blue-500 text-white rounded-md py-1 px-3 mr-4">
-                    Share
+                  <button className="flex">
+                    <FiShare className="mr-3" />
                   </button>
                 </div>
               </div>
@@ -274,6 +287,7 @@ const Home = () => {
           ))}
         </ul>
       </div>
+      <LoginButton />
     </div>
   );
 };
